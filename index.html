@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>auto-post</title>
+<meta name="description" content="auto-post: a private tool that posts the owner's own content to the owner's own YouTube channels and X account on a schedule.">
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#555;--line:#ddd;--link:#0b57d0}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--muted:#aaa;--line:#333;--link:#8ab4f8}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;overflow-wrap:anywhere}
+main{max-width:720px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:28px;margin:0 0 8px}
+h2{font-size:20px;margin:32px 0 8px;border-top:1px solid var(--line);padding-top:24px}
+.muted{color:var(--muted);font-size:14px}
+a{color:var(--link)}
+</style>
+</head>
+<body>
+<main>
+<h1>auto-post</h1>
+<p class="muted">Last updated: 2026-11-10</p>
+
+<p>auto-post is a private, internal tool. The owner of this site built it and runs it only for the owner's own accounts: the YouTube channels "AIに全投げ研究所" (Japanese) and "Old Genius, New Tools" (English), and the owner's own X account.</p>
+<p>The owner writes a schedule in a private Google Sheet. Once an hour, a job in a private GitHub repository reads the sheet and checks each row.</p>
+<ul>
+<li><strong>YouTube (the part that uses Google sign-in):</strong> it uploads the owner's own video from the owner's own Google Drive to the owner's own channel, scheduled to be published at the planned time (or published immediately if that time is very close or has just passed). Later it checks whether the video was published and reads its view count.</li>
+<li><strong>X:</strong> it posts the owner's own text, images and short videos to the owner's own X account. This part does not use any Google user data.</li>
+</ul>
+<p>auto-post has no public sign-up, no user interface and no other users. No other person or channel uses it.</p>
+<p><a href="privacy.html">Privacy Policy</a></p>
+
+<h2 lang="ja">日本語</h2>
+<div lang="ja">
+<p>auto-post は、このサイトの持ち主が、自分のアカウント（YouTube の日本語チャンネル「AIに全投げ研究所」と英語チャンネル「Old Genius, New Tools」、自分の X のアカウント）のためだけに作って動かしている、非公開の道具です。</p>
+<p>持ち主が非公開の Google スプレッドシートに予定を書くと、非公開の GitHub のリポジトリのジョブが1時間ごとにそれを読み、行を検査します。</p>
+<ul>
+<li><strong>YouTube（Google のログインを使う部分）：</strong>持ち主の Google Drive にある持ち主の動画を、持ち主のチャンネルに、決めた時刻に公開する予約で上げます（その時刻がすぐ近いか、少し過ぎていれば、すぐ公開で上げます）。そのあと、公開されたかと見られた数を確かめます。</li>
+<li><strong>X：</strong>持ち主の文章・画像・短い動画を、持ち主の X のアカウントに投稿します。この部分は Google のユーザーのデータを使いません。</li>
+</ul>
+<p>登録の画面も、ほかの利用者もありません。</p>
+<p><a href="privacy.html">プライバシーポリシー</a></p>
+</div>
+</main>
+</body>
+</html>
